@@ -1,0 +1,28 @@
+{
+  "name": "led_blink",
+  "description": "led blink.",
+  "description_zh": "led blink.",
+  "enable": "PKG_USING_LED_BLINK",
+  "keywords": [
+    "led_blink"
+  ],
+  "category": "peripherals",
+  "author": {
+    "name": "juzhango",
+    "email": "juzhango@outlook.com",
+    "github": "juzhango"
+  },
+  "license": "LGPL-2.1",
+  "repository": "https://github.com/juzhango/led_blink",
+  "icon": "unknown",
+  "homepage": "https://github.com/juzhango/led_blink#readme",
+  "doc": "unknown",
+  "site": [
+    {
+      "version": "latest",
+      "URL": "https://github.com/juzhango/led_blink.git",
+      "filename": "led_blink-latest.zip",
+      "VER_SHA": ""
+    }
+  ]
+}

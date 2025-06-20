@@ -1,0 +1,33 @@
+menuconfig PKG_USING_LED_BLINK
+    bool "led blink."
+    default n
+
+if PKG_USING_LED_BLINK
+
+    config PKG_USING_LED_BLINK_DEMO
+        bool "Use demo"
+        default n
+        help
+            Enable the LED blink demo application.
+
+    config PKG_LED_BLINK_PATH
+        string "Installation path"
+        default "/packages/peripherals/led_blink"
+        help
+            Path where the led blink package is located.
+
+    choice
+        prompt "Version"
+        default PKG_LED_BLINK_LATEST_VERSION
+        help
+            Select the package version
+
+        config PKG_LED_BLINK_LATEST_VERSION
+            bool "latest"
+    endchoice
+
+    config PKG_LED_BLINK_VER
+        string "Package Version"
+        default "latest" if PKG_LED_BLINK_LATEST_VERSION
+
+endif # PKG_USING_LED_BLINK
